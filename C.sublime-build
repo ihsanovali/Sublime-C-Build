@@ -9,7 +9,6 @@
 
     "selector": "source.c",
 
-
     "variants":
 
     [
@@ -18,13 +17,7 @@
 
             "name": "Run in Terminal",
 
-
-            "linux": 
-            {
-
-                "shell_cmd": "gcc -ansi -pedantic-errors -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && gnome-terminal --title=\"${file_path}/${file_base_name}\" -e 'bash -c \"echo gcc -ansi -pedantic-errors -Wall -Wextra \"${file}\" && ${file_path}/${file_base_name} && echo && echo Press ENTER to exit && read line && exit\"'"
-
-            },
+            "shell_cmd": "gcc -ansi -pedantic-errors -Wall -Wextra \"${file}\" -o \"${file_path}/${file_base_name}\" && gnome-terminal --title=\"${file_path}/${file_base_name}\" -e 'bash -c \"echo gcc -ansi -pedantic-errors -Wall -Wextra \"${file}\" && ${file_path}/${file_base_name} && echo && echo Press ENTER to exit && read line && exit\"'"
 
             "shell": true,
 
